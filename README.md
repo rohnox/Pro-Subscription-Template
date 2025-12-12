@@ -57,7 +57,7 @@
 </div>
 
 ```bash
-sudo wget -N -P /var/lib/marzban/templates/subscription/ https://raw.githubusercontent.com/Mrclocks/Pro-Subscription-Template/main/index.html
+sudo wget -N -P /var/lib/rebecca/templates/subscription/ https://raw.githubusercontent.com/Mrclocks/Pro-Subscription-Template/main/index.html
 ```
 
 <div>
@@ -67,20 +67,20 @@ sudo wget -N -P /var/lib/marzban/templates/subscription/ https://raw.githubuserc
 </div>
 
 ```bash
-echo 'CUSTOM_TEMPLATES_DIRECTORY="/var/lib/marzban/templates/"' | sudo tee -a /opt/marzban/.env
-echo 'SUBSCRIPTION_PAGE_TEMPLATE="subscription/index.html"' | sudo tee -a /opt/marzban/.env
+echo 'CUSTOM_TEMPLATES_DIRECTORY="/var/lib/rebecca/templates/"' | sudo tee -a /opt/rebecca/.env
+echo 'SUBSCRIPTION_PAGE_TEMPLATE="subscription/index.html"' | sudo tee -a /opt/rebecca/.env
 ```
 
 <div>
 
 #### 📝 روش جایگزین: اضافه کردن مستقیم به فایل `.env`
 
-مقادیر زیر را مستقیماً در فایل `.env` واقع در `/opt/marzban/` اضافه کنید:
+مقادیر زیر را مستقیماً در فایل `.env` واقع در `/opt/rebecca/` اضافه کنید:
 
 </div>
 
 ```bash
-CUSTOM_TEMPLATES_DIRECTORY="/var/lib/marzban/templates/"
+CUSTOM_TEMPLATES_DIRECTORY="/var/lib/rebecca/templates/"
 SUBSCRIPTION_PAGE_TEMPLATE="subscription/index.html"
 ```
 
@@ -91,7 +91,7 @@ SUBSCRIPTION_PAGE_TEMPLATE="subscription/index.html"
 </div>
 
 ```bash
-marzban restart
+rebecca restart
 ```
 
 <div>
